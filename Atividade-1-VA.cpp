@@ -33,7 +33,7 @@ int main(){
 	 printf("\n\nDigite o valor: \t");
 	 scanf("%lf", &proximo_boleto->valor);
 	 
-	 printf("Digite o dia de vencimento: \t");
+	 printf("Digite a situação do pagamento: \t");
 	 scanf("%c", &proximo_boleto->situacao);
 	}
 	
@@ -43,6 +43,7 @@ int main(){
 		printf("Dia: \t %d /\t %d/ \t %d\n valor de: %lf \n Situacao: \t %c", proximo_boleto->dia, proximo_boleto->mes, proximo_boleto->ano, proximo_boleto->valor, proximo_boleto->situacao);
 		proximo_boleto = proximo_boleto->proximo;
 	}
+	
 	
 	
 	return 0;
